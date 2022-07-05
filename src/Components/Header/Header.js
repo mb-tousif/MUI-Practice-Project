@@ -51,12 +51,12 @@ const Header = () => {
                 mr: 2,
                 display: { xs: "none", md: "flex" },
                 fontFamily: "roboto",
-                fontWeight: 700,
+                fontWeight: 600,
                 color: "inherit",
                 textDecoration: "none",
               }}
             >
-             Developer Site
+              Developer Site
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -104,21 +104,25 @@ const Header = () => {
               sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
             />
             <Typography
-              variant="h4"
+              variant="h5"
               noWrap
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
                 fontFamily: "roboto",
-                fontWeight: 700,
+                fontWeight: 600,
                 color: "inherit",
                 textDecoration: "none",
               }}
             >
-             Developer Site
+              Developer Site
             </Typography>
-            <Stack direction="row" spacing={2} sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            >
               {pages.map((page) => (
                 <Button
                   key={page}
@@ -129,7 +133,6 @@ const Header = () => {
                 </Button>
               ))}
             </Stack>
-
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
