@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
+import Divider from "@mui/material/Divider";
 const GridLayout = () => {
   return (
     <Box
@@ -148,6 +148,7 @@ const GridLayout = () => {
           </Box>
         </Grid>
       </Grid>
+      <Divider/>
     </Box>
   );
 };
